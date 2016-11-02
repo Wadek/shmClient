@@ -127,6 +127,18 @@ nav a.router-link-active {
   border-radius: 4px 0 0 4px;
 }
 
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #222;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
 /* everywhere else */
 * { 
   font-family: Arial, Helvetica, sans-serif; 

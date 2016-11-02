@@ -1,13 +1,19 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Auth0 - Angular 2</a>
+      <a class="navbar-brand" href="#">Sheet Music International</a>
       <button class="btn btn-primary btn-margin" (click)="auth.login()" *ngIf="!auth.authenticated()">Log In</button>
       <button class="btn btn-primary btn-margin" (click)="auth.logout()" *ngIf="auth.authenticated()">Log Out</button>
     </div>
   </div>
 </nav>
 
-<main class="container">
+<main class="container" >
   <router-outlet></router-outlet>
 </main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <p class="text-center">Sheet Music International Archive</p>
+  </div>
+</footer>
