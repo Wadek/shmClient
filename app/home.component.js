@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var auth_service_1 = require('./auth.service');
+var auth_service_1 = require('./Services/Auth/auth.service');
 var HomeComponent = (function () {
     function HomeComponent(auth) {
         this.auth = auth;
