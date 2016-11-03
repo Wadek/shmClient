@@ -147,3 +147,7 @@ nav a.router-link-active {
 .btn-margin {
   margin-top: 5px
 }
+
+ul li {
+    padding: 10px 0;
+  }
