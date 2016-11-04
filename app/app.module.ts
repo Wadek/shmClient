@@ -3,14 +3,17 @@ import { BrowserModule  }      from '@angular/platform-browser';
 import { AUTH_PROVIDERS }      from 'angular2-jwt';
 
 import { AppComponent }        from './app.component';
-import { HomeComponent }       from './home.component';
+import { HomeComponent }       from './Components/homeComponent/home.component';
 import { routing,
          appRoutingProviders } from './app.routes';
+import {RouterModule} from '@angular/Router';
+import {dashboardComponent }                from './Components/dashboard/dashboard';
 
 @NgModule({
     declarations: [
         AppComponent,
-        HomeComponent
+        HomeComponent,
+        dashboardComponent
     ],
     providers:    [
         appRoutingProviders,
@@ -18,7 +21,7 @@ import { routing,
     ],
     imports:      [
         BrowserModule,
-        routing
+        routing,
     ],
     bootstrap:    [AppComponent],
 })
