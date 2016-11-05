@@ -6,7 +6,7 @@ import { AppComponent }        from './app.component';
 import { HomeComponent }       from './Components/homeComponent/home.component';
 import { routing,
          appRoutingProviders } from './app.routes';
-import {RouterModule} from '@angular/Router';
+import {RouterModule} from '@angular/router';
 import {dashboardComponent }                from './Components/dashboard/dashboard';
 import { UploadModal } from './Modals/UploadModal/uploadModal';
 @NgModule({
