@@ -8,7 +8,7 @@ import { routing,
          appRoutingProviders } from './app.routes';
 import {RouterModule} from '@angular/Router';
 import {dashboardComponent }                from './Components/dashboard/dashboard';
-
+import { UploadModal } from './Modals/UploadModal/uploadModal';
 @NgModule({
     declarations: [
         AppComponent,
