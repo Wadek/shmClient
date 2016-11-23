@@ -45,6 +45,124 @@
     -->
   </div>
 </nav>
+
+
+
+
+
+<!-- Carousel container -->
+<div id="my-pics" class="carousel slide" data-ride="carousel">
+
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#my-pics" data-slide-to="0" class="active"></li>
+<li data-target="#my-pics" data-slide-to="1"></li>
+<li data-target="#my-pics" data-slide-to="2"></li>
+</ol>
+
+<!-- Content -->
+<div class="carousel-inner" role="listbox">
+
+<!-- Slide 1 -->
+<div class="carousel-item active" style="text-align: center;">
+<img src="http://www.w3schools.com/css/trolltunga.jpg" alt="Sunset over beach">
+<div class="carousel-caption">
+<h3>Boracay</h3>
+<p>White Sand Beach.</p>
+</div>
+</div>
+
+<!-- Slide 2 -->
+<div class="carousel-item" style="text-align: center;">
+<img src="http://www.aee-community.com/wp-content/uploads/rtMedia/users/1/2016/09/2429637D00000578-0-image-a-284_1419003100839.jpg" alt="Rob Roy Glacier">
+<div class="carousel-caption">
+<h3>Rob Roy Glacier</h3>
+<p>You can almost touch it!</p>
+</div>
+</div>
+
+<!-- Slide 3 -->
+<div class="carousel-item" style="text-align: center;">
+<img src="http://economictimes.indiatimes.com/thumb/msid-25252601,width-640,resizemode-4/stunning-images-of-the-space.jpg" alt="Longtail boats at Phi Phi">
+<div class="carousel-caption">
+<h3>Phi Phi</h3>
+<p>Longtail boats at Phi Phi.</p>
+</div>
+</div>
+
+</div>
+
+<!-- Previous/Next controls -->
+<a class="left carousel-control" href="#my-pics" role="button" data-slide="prev">
+<span class="icon-prev" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#my-pics" role="button" data-slide="next">
+<span class="icon-next" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+
+</div>
+
+<!-- Center the image -->
+<style scoped>
+.carousel-item img{
+    margin: 0 auto;
+    text-align: center;
+}
+</style>
+
+
+
+
+
+
+
+
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <div class="fileupload fileupload-new" data-provides="fileupload">
+  <div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;"></div>
+  <div>
+    <span class="btn btn-file"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file" /></span>
+    <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+  </div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <main >
   <router-outlet></router-outlet>
 </main>
