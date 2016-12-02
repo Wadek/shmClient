@@ -35,7 +35,7 @@ nav
 
 .jumbotron
 {
-    margin-bottom: 2rem;
+    margin-bottom: 0px !important;
     background-color: #eceeef;
     border-radius: 3rem;
 }
