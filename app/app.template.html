@@ -8,17 +8,17 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Profile</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">News</a>
       </li>
       <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="http://example.com" id="responsiveNavbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
         <div class="dropdown-menu" aria-labelledby="responsiveNavbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Upload</a>
+          <a class="dropdown-item" href="#">Download</a>
+          <a class="dropdown-item" href="#">Search</a>
         </div>
       </li>
        <li class="nav-item active">
@@ -47,6 +47,15 @@
 </nav>
 
 
+<div class = "jumbotron">
+  <div class = "jumbocontainer">
+    <div style = "font-size: 4.5rem; font-weight: 300;"> <h3>WELCOME TO SHEET MUSIC INTERNATIONAL</h3></div>
+    <p>
+      This is an ongoing project to provide a one-stop website to obtain classical sheet music.
+      We hope you enjoy your time and please let us know how we can improve the site.
+    </p>
+  </div>
+</div>
 
 
 
@@ -65,28 +74,28 @@
 
 <!-- Slide 1 -->
 <div class="carousel-item active" style="text-align: center;">
-<img src="http://www.w3schools.com/css/trolltunga.jpg" alt="Sunset over beach">
+<img src="http://mediad.publicbroadcasting.net/p/kunr/files/styles/x_large/public/201408/Classical-Music-Wallpaper.jpg" alt="download">
 <div class="carousel-caption">
-<h3>Boracay</h3>
-<p>White Sand Beach.</p>
+<h3>Sheet Music Database</h3>
+<p>Find and download thousands of pieces</p>
 </div>
 </div>
 
 <!-- Slide 2 -->
 <div class="carousel-item" style="text-align: center;">
-<img src="http://www.aee-community.com/wp-content/uploads/rtMedia/users/1/2016/09/2429637D00000578-0-image-a-284_1419003100839.jpg" alt="Rob Roy Glacier">
+<img src="http://www.nixmuse.com/sliderClassical/data1/images/classicalmusicfull.jpg" alt="share">
 <div class="carousel-caption">
-<h3>Rob Roy Glacier</h3>
-<p>You can almost touch it!</p>
+<h3>Share Music with the World!</h3>
+<p>Made for aspiring and professional composers alike</p>
 </div>
 </div>
 
 <!-- Slide 3 -->
 <div class="carousel-item" style="text-align: center;">
-<img src="http://economictimes.indiatimes.com/thumb/msid-25252601,width-640,resizemode-4/stunning-images-of-the-space.jpg" alt="Longtail boats at Phi Phi">
-<div class="carousel-caption">
-<h3>Phi Phi</h3>
-<p>Longtail boats at Phi Phi.</p>
+<img src="http://2.bp.blogspot.com/-4vV_s-_maTw/VPMXE1aDg6I/AAAAAAAAHt8/Ck1vV_OugsU/s1600/headphones-turning-into-musical-notes-music-hd-wallpaper-1920x1200-7234.jpg" alt="user upload">
+<div class="carousel-caption" style="color: #373A3C;">
+<h3>Upload custom pieces!</h3>
+<p>Share and sell your own works</p>
 </div>
 </div>
 
@@ -114,14 +123,10 @@
 
 
 
-
-
-
-
-
+<div class="button_holder">
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
+  Upload Sheet Music
+</button></div>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -129,7 +134,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">Upload</h4>
       </div>
       <div class="modal-body">
         <div class="fileupload fileupload-new" data-provides="fileupload">
@@ -149,27 +154,38 @@
   </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="categories">
+  <div class="categories-container">
 
 
 
 <main >
-  <router-outlet></router-outlet>
 </main>
 
 <footer class="footer">
-  <div class="footer-container">
-    <p class="text-center">Sheet Music International Archive</p>
+  <div class = "container">
+    <div class="row">
+      <div class="col-md-4">        
+        <ul class="noBullets">
+        <li>SMI</li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Site status</a></li></ul>
+      </div>
+      <div class="col-sm-4">
+        <ul class="noBullets">
+        <li>Services</li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Upload</a></li>
+        <li><a href="#">My Profile</a></li></ul>
+      </div>
+      <div class="col-sm-4">
+        <ul class="noBullets">
+        <li>Other</li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Report issue</a></li></ul>
+      </div>
+    </div>
   </div>
 </footer>
