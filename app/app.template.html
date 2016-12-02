@@ -1,54 +1,191 @@
+
+<nav class="navbar navbar-dark bg-inverse">
+  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" ></button>
+  <div class="collapse navbar-toggleable-md" id="navbarResponsive" style="padding: 30px">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <ul class="nav navbar-nav pull-right">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Profile</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">News</a>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="responsiveNavbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu" aria-labelledby="responsiveNavbarDropdown">
+          <a class="dropdown-item" href="#">Upload</a>
+          <a class="dropdown-item" href="#">Download</a>
+          <a class="dropdown-item" href="#">Search</a>
+        </div>
+      </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="#"><a href="#" (click)="auth.login()" *ngIf="!auth.authenticated()"> Login</a></a>
+      </li>
+
+        <button class="btn btn-primary btn-margin" (click)="auth.logout()" *ngIf="auth.authenticated()">Log Out</button>
+
 <!--
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Sheet Music International</a>
-      <button class="btn btn-primary btn-margin" (click)="auth.login()" *ngIf="!auth.authenticated()">Log In</button>
-      <button class="btn btn-primary btn-margin" (click)="auth.logout()" *ngIf="auth.authenticated()">Log Out</button>
-    </div>
-  </div>
-</nav>-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div style="width: 100%">
-        <a href="#" class="navbar-left"><img src="https://d13yacurqjgara.cloudfront.net/users/31752/screenshots/1562713/hello-world.png" style="width: 150px; height: 80px"></a>
-
-
-      </div>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-       
-        <li><a href="#">Page 2</a></li>
-        <li><a href="#">Page 3</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" (click)="auth.login()" *ngIf="!auth.authenticated()"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#" (click)="auth.login()" *ngIf="!auth.authenticated()"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <div class="pull-right" style="padding-right: 5px">
+       <li class="nav-item"><a href="#" (click)="auth.login()" *ngIf="!auth.authenticated()"><span class="fa fa-user"></span> Sign Up</a></li>
+        <li class="nav-item"><a href="#" (click)="auth.login()" *ngIf="!auth.authenticated()"><i class="fa fa-edit"></i>  Login</a></li>
               <button class="btn btn-primary btn-margin" (click)="auth.logout()" *ngIf="auth.authenticated()">Log Out</button>
+              </div> 
+              -->
+    </ul>
 
-      </ul>
-    </div>
+    <!--
+    <form class="form-inline float-lg-right">
+      <input class="form-control" type="text" placeholder="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    -->
   </div>
 </nav>
 
-<main class="container" >
-  <router-outlet></router-outlet>
+
+<div class = "jumbotron">
+  <div class = "jumbocontainer">
+    <div style = "font-size: 4.5rem; font-weight: 300;"> <h3>WELCOME TO SHEET MUSIC INTERNATIONAL</h3></div>
+    <p>
+      This is an ongoing project to provide a one-stop website to obtain classical sheet music.
+      We hope you enjoy your time and please let us know how we can improve the site.
+    </p>
+  </div>
+</div>
+
+
+
+<!-- Carousel container -->
+<div id="my-pics" class="carousel slide" data-ride="carousel">
+
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#my-pics" data-slide-to="0" class="active"></li>
+<li data-target="#my-pics" data-slide-to="1"></li>
+<li data-target="#my-pics" data-slide-to="2"></li>
+</ol>
+
+<!-- Content -->
+<div class="carousel-inner" role="listbox">
+
+<!-- Slide 1 -->
+<div class="carousel-item active" style="text-align: center;">
+<img src="http://mediad.publicbroadcasting.net/p/kunr/files/styles/x_large/public/201408/Classical-Music-Wallpaper.jpg" alt="download">
+<div class="carousel-caption">
+<h3>Sheet Music Database</h3>
+<p>Find and download thousands of pieces</p>
+</div>
+</div>
+
+<!-- Slide 2 -->
+<div class="carousel-item" style="text-align: center;">
+<img src="http://www.nixmuse.com/sliderClassical/data1/images/classicalmusicfull.jpg" alt="share">
+<div class="carousel-caption">
+<h3>Share Music with the World!</h3>
+<p>Made for aspiring and professional composers alike</p>
+</div>
+</div>
+
+<!-- Slide 3 -->
+<div class="carousel-item" style="text-align: center;">
+<img src="http://2.bp.blogspot.com/-4vV_s-_maTw/VPMXE1aDg6I/AAAAAAAAHt8/Ck1vV_OugsU/s1600/headphones-turning-into-musical-notes-music-hd-wallpaper-1920x1200-7234.jpg" alt="user upload">
+<div class="carousel-caption" style="color: #373A3C;">
+<h3>Upload custom pieces!</h3>
+<p>Share and sell your own works</p>
+</div>
+</div>
+
+</div>
+
+<!-- Previous/Next controls -->
+<a class="left carousel-control" href="#my-pics" role="button" data-slide="prev">
+<span class="icon-prev" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#my-pics" role="button" data-slide="next">
+<span class="icon-next" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+
+</div>
+
+<!-- Center the image -->
+<style scoped>
+.carousel-item img{
+    margin: 0 auto;
+    text-align: center;
+}
+</style>
+
+
+
+<div class="button_holder">
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Upload Sheet Music
+</button></div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Upload</h4>
+      </div>
+      <div class="modal-body">
+        <div class="fileupload fileupload-new" data-provides="fileupload">
+  <div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;"></div>
+  <div>
+    <span class="btn btn-file"><span class="fileupload-new">Select image</span><span class="fileupload-exists">Change</span><input type="file" /></span>
+    <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+  </div>
+  <div></div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="categories">
+  <div class="categories-container">
+
+
+
+<main >
 </main>
 
 <footer class="footer">
-  <div class="footer-container">
-    <p class="text-center">Sheet Music International Archive</p>
+  <div class = "container">
+    <div class="row">
+      <div class="col-md-4">        
+        <ul class="noBullets">
+        <li>SMI</li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Site status</a></li></ul>
+      </div>
+      <div class="col-sm-4">
+        <ul class="noBullets">
+        <li>Services</li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Upload</a></li>
+        <li><a href="#">My Profile</a></li></ul>
+      </div>
+      <div class="col-sm-4">
+        <ul class="noBullets">
+        <li>Other</li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Report issue</a></li></ul>
+      </div>
+    </div>
   </div>
 </footer>
